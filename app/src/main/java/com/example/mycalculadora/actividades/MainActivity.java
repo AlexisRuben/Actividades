@@ -44,12 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 String cadenaInvertida=" ";
 
 
-                //variables
+
                 String texto = "";
                 char [] letras;
 
-                int mayorRepeticion = 0;
-                char letraMasRepetida = ' ';
+                char letraRep = ' ';
 
 
                 texto = palabra.getText().toString();
@@ -65,12 +64,11 @@ public class MainActivity extends AppCompatActivity {
                             contador++;
                     }
 
-                    if(mayorRepeticion < contador)
+                    if(0 < contador)
                     {
-                        mayorRepeticion = contador;
-                        letraMasRepetida = letraActual;
+                        letraRep = letraActual;
                     }
-                    letrass.setText(""+letraMasRepetida);
+                    letrass.setText(""+letraRep);
                 }
 
 
